@@ -1,0 +1,22 @@
+#include <stdio.h>
+void main(){
+    int ar[5]={5,4,3,2,1};
+    int i,j,swap;
+    printf("array before sorting:-\n");
+    for(i=0;i<=4;i++)
+        printf("%d\t",ar[i]);
+    for(i=0;i<=3;i++)
+    {
+        for(j=i+1;j<=4;j++)
+        {
+            if((ar[i]>ar[j]))
+            swap=ar[i];
+            ar[i]=ar[j];
+            ar[j]=swap;
+        }
+    }
+    printf("\narray after sorting:-\n");
+    for(i=0;i<=4;i++)
+    {printf("%d\t",ar[i]);
+    }
+}
